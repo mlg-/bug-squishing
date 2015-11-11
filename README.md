@@ -2,7 +2,7 @@
 **Some thoughts on problem decomposition and debugging.**
 
 ## Introduction
-Problem decomposition and debugging in Ruby are made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/). You may also find extensions to Pry like [https://github.com/nixme/pry-nav](Pry Nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug).
+Problem decomposition and debugging in Ruby are made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/). You may also find extensions to Pry like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug).
 
 # Strategies for Problem Decomposition
 
@@ -68,6 +68,8 @@ NOTE TO SELF: RETURN TO THIS, IT DOESN"T MAKE SENSE YET LOLZ FOREVS
 ## Beast-mode uses of Pry
 
 Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line before things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your ruby file, whatever, but put it in there.
+
+
 
 ## Google Fu
 
