@@ -2,7 +2,7 @@
 **Some thoughts on problem decomposition and debugging.**
 
 ## Introduction
-Problem decomposition and debugging in Ruby are made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/). You may also find extensions to Pry like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug).
+Problem decomposition and debugging in Ruby are made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/). You may also find extensions to Pry like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug) useful for particularly thorny issues.
 
 # Strategies for Problem Decomposition
 
