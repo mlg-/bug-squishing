@@ -70,6 +70,33 @@ NOTE TO SELF: RETURN TO THIS, IT DOESN"T MAKE SENSE YET LOLZ FOREVS
 !["Not being a baddy"](/images/baddy.png)
 !["trololol"](/images/trololol.png)
 
+Okay, you get the picture. You have to read the damn [stack trace](https://en.wikipedia.org/wiki/Stack_trace). But how, you ask?!
+
+Here's an example:
+
+```
+/Users/mlg/cf/bug-squishing/hello-world/lib/greeting.rb:12:in `say_greeting': undefined local variable or method `hello_word' for main:Object (NameError)
+  from /Users/mlg/cf/bug-squishing/hello-world/spec/hello_world_spec.rb:1:in `require_relative'
+  from /Users/mlg/cf/bug-squishing/hello-world/spec/hello_world_spec.rb:1:in `<top (required)>'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/configuration.rb:1327:in `load'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/configuration.rb:1327:in `block in load_spec_files'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/configuration.rb:1325:in `each'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/configuration.rb:1325:in `load_spec_files'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/runner.rb:102:in `setup'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/runner.rb:88:in `run'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/runner.rb:73:in `run'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/lib/rspec/core/runner.rb:41:in `invoke'
+  from /Users/mlg/.gem/ruby/2.0.0/gems/rspec-core-3.3.2/exe/rspec:4:in `<top (required)>'
+  from /Users/mlg/.gem/ruby/2.0.0/bin/rspec:23:in `load'
+  from /Users/mlg/.gem/ruby/2.0.0/bin/rspec:23:in `<main>'
+  from /Users/mlg/.gem/ruby/2.0.0/bin/ruby_executable_hooks:15:in `eval'
+  from /Users/mlg/.gem/ruby/2.0.0/bin/ruby_executable_hooks:15:in `<main>'
+```
+Let's break down how to read this, top to bottom:
+
+1. `/Users/mlg/cf/bug-squishing/hello-world/lib/greeting.rb:12` : this part says, hey, the error in your file is occurring on line 12 of a file called `greeting.rb`, and here is the full path to that file.
+
+2. `\`say_greeting'`
 
 
 

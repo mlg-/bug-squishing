@@ -8,3 +8,5 @@ class Greeting
     "Hello World"
   end
 end
+
+puts hello_word
