@@ -63,7 +63,11 @@ NOTE TO SELF: RETURN TO THIS, IT DOESN"T MAKE SENSE YET LOLZ FOREVS
 
 ## Rubber Ducky, you're the one...you make debugging lots of f--well, less terrible
 
-## Stack traces don't lie
+## The stack trace does not lie
+
+!["Read the stack trace, Luke."](/images/luke.png)
+
+
 
 ## Beast-mode uses of Pry
 
