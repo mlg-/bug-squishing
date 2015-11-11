@@ -66,6 +66,7 @@ NOTE TO SELF: RETURN TO THIS, IT DOESN"T MAKE SENSE YET LOLZ FOREVS
 ## The stack trace does not lie
 
 !["Read the stack trace, Luke."](/images/luke.png)
+!(/images/sadtip.png)
 
 
 
