@@ -67,6 +67,8 @@ NOTE TO SELF: RETURN TO THIS, IT DOESN"T MAKE SENSE YET LOLZ FOREVS
 
 !["Read the stack trace, Luke."](/images/luke.png)
 !["A sad tip"](/images/sadtip.png)
+!["Not being a baddy"](/images/baddy.png)
+!["trololol"](/images/trololol.png)
 
 
 
