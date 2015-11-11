@@ -32,7 +32,7 @@ Finally, doodling is your friend, too! If you are a visual person, it can be hel
 
 A test is another great way to nail down what you are trying to do. If you know what objects you need, you can write tests to help you decide how they should behave or what their methods should produce.
 
-Tests also give you more feedback about what's wrong. Consider this (slightly contrived) example in a file called `code.rb`:
+Tests also give you more feedback about what's wrong. Consider this (slightly contrived) example in a file called `greeting.rb`:
 
 
 ```
@@ -46,7 +46,7 @@ puts hello_word
 
 ```
 
-If we run `ruby code.rb`, we'll never see any output to our terminal. Yikes, why not? Well, because we've misspelled `hello_world` when calling it at the end of `code.rb`. A test would give us more information about this, even if we made the same mistake:
+If we run `ruby greeting.rb`, we'll never see any output to our terminal. Yikes, why not? Well, because we've misspelled `hello_world` when calling it at the end of `greeting.rb`. A test would give us more information about this, even if we made the same mistake:
 
 ```
 Rspec.describe Greeting do
