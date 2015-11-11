@@ -96,8 +96,15 @@ Let's break down how to read this, top to bottom:
 
 1. `/Users/mlg/cf/bug-squishing/hello-world/lib/greeting.rb:12` : this part says, hey, the error in your file is occurring on line 12 of a file called `greeting.rb`, and here is the full path to that file.
 
-2. `\`say_greeting'`
+2. `:in say_greeting` : this is the specific method where everything is blowing up.
 
+3. `undefined local variable or method `hello_word'` : this is *actual error message* that specifically says what the Ruby interpreter is all worked up about. We'll talk about some common errors in a minute.
+
+4. `main:Object` : this is the class name that's involved.
+
+5. `(NameError)` : this is the name of the exception.
+
+6. Every line thereafter is where your error originated from, all the way down into the guts of the Ruby Standard Library.
 
 
 ## Beast-mode uses of Pry
