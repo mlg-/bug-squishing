@@ -99,9 +99,16 @@ Let's break down how to read this, top to bottom:
 
 The first thing you should do is read that first line carefully, and then follow it back to the line and method that it indicates are problematic. Take a moment to assess the code there and use the specific error message to give you a suggestion about what's going on.
 
-For example...
+Some common Ruby errors:
 
 `NoMethod`: You're trying to call a method that doesn't exist, that you've misspelled, *or* you're trying to call a method on `nil` (which, technically, is a method that doesn't exist since `nil` has no methods, but that's neither here nor there).
+
+`LoadError`: You're trying to call a file from the wrong place. Or it doesn't exist yet. Or it's in a different folder than you think it is. Or you misspelled its name.
+
+`ArgumentError`: You're trying to give a method too many arguments...or too few. Check out the numbers to help clear things up: `(0 for 1)` means one argument is required and you aren't passing it. `(2 for 1)` means you're passing two and it only takes one!
+
+'TypeError': You're trying to do something with an integer that you can only do with a string. Or any other data type mismatch. i.e.: `[1, 2, 3].first("two")`.
+
 
 
 ## Beast-mode uses of Pry
