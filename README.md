@@ -81,7 +81,7 @@ Here's an example:
   from /Users/mlg/.gem/ruby/2.0.0/bin/ruby_executable_hooks:15:in `<main>'
 ```
 
-!(/images/stacktracebigthree.png)
+!["Stack trace diagram"](/images/stacktracebigthree.png)
 
 Let's break down how to read this, top to bottom:
 
