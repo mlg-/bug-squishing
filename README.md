@@ -94,11 +94,11 @@ Let's break down how to read this, top to bottom:
 
 6. Every line thereafter is where your error originated from, all the way down into the guts of the Ruby Standard Library.
 
-The first thing you should do is read that first line carefully, and then follow it back to the line and method that it indicates are problematic. Take a moment to assess the code there and use the specific error message to give you a suggestion about what's going on. Here are some common Ruby errors:
+The first thing you should do is read that first line carefully, and then follow it back to the line and method that it indicates are problematic. Take a moment to assess the code there and use the specific error message to give you a suggestion about what's going on.
 
-`NoMethod`: You're trying to call a method that doesn't exist, that you've misspelled, *or* you're trying to call a method on `nil` (which, technically, is a method that doesn't exist since `nil` has no methods, but that's neither here nor there)
+For example...
 
-`
+`NoMethod`: You're trying to call a method that doesn't exist, that you've misspelled, *or* you're trying to call a method on `nil` (which, technically, is a method that doesn't exist since `nil` has no methods, but that's neither here nor there).
 
 
 ## Beast-mode uses of Pry
