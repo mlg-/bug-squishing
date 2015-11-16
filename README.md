@@ -80,6 +80,9 @@ Here's an example:
   from /Users/mlg/.gem/ruby/2.0.0/bin/ruby_executable_hooks:15:in `eval'
   from /Users/mlg/.gem/ruby/2.0.0/bin/ruby_executable_hooks:15:in `<main>'
 ```
+
+![/images/stacktracebigthree.png]
+
 Let's break down how to read this, top to bottom:
 
 1. `/Users/mlg/cf/bug-squishing/hello-world/lib/greeting.rb:12` : this part says, hey, the error in your file is occurring on line 12 of a file called `greeting.rb`, and here is the full path to that file.
