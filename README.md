@@ -101,6 +101,8 @@ The first thing you should do is read that first line carefully, and then follow
 
 Some common Ruby errors:
 
+`NameError`: You're trying to call something that is spelled wrong or plain old doesn't exist. Did you forget to capitalize your class name? Did you misspell the name of the method you actually want?
+
 `NoMethod`: You're trying to call a method that doesn't exist, that you've misspelled, *or* you're trying to call a method on `nil` (which, technically, is a method that doesn't exist since `nil` has no methods, but that's neither here nor there).
 
 `LoadError`: You're trying to call a file from the wrong place. Or it doesn't exist yet. Or it's in a different folder than you think it is. Or you misspelled its name.
@@ -110,14 +112,36 @@ Some common Ruby errors:
 'TypeError': You're trying to do something with an integer that you can only do with a string. Or any other data type mismatch. i.e.: `[1, 2, 3].first("two")`.
 
 
+## Sanity check *everything*
 
 ## Beast-mode uses of Pry
 
 Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line before things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your ruby file, whatever, but put it in there.
 
 
-
 ## Google Fu
+
+### What to paste into Google, and some basic search operators
+
+When pasting an error into Google, avoid pasting too much text. Pick part of the file path where an error is occurring that will be common to search results of the problem on another user's machine where the error is occurring. Avoid timestamps, your user name on your computer, and other information that's irrelevant and could skew the results in a nonsensical direction. For example, when debugging this error in the Terminal:
+
+```
+ruby server.rb
+/Users/Michelle/.gem/ruby/2.0.0/gems/puma-2.13.4/lib/puma/puma_http11.bundle: [BUG] Segmentation fault
+ruby 2.0.0p598 (2014-11-13) [x86_64-darwin14.1.0]
+```
+
+I pasted this into Google:
+
+```
+[BUG] Segmentation fault ruby 2.0.0p598 (2014-11-13) puma
+```
+
+This turned up some results that suggested Puma might have been installed incorrectly or corrupted along the way. So the solution wound up being to run a more recent version of Ruby, re-install the Puma gem, and move forward.
+
+### Evaluating your results
+
+### 
 
 ## Just write the damn code (Red, Green, Refactor)
 
