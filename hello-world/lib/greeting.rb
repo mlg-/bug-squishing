@@ -13,4 +13,4 @@ class Greeting
   end
 end
 
-puts hello_word
+# puts hello_word

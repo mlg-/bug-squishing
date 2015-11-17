@@ -135,15 +135,15 @@ Now back to your regularly scheduled programming!
 
 Some common Ruby errors:
 
-`NameError`: You're trying to call something that is spelled wrong or plain old doesn't exist. Did you forget to capitalize your class name? Did you misspell the name of the method you actually want?
+`NameError`: You're trying to call something that is spelled wrong or plain old doesn't exist. Did you forget to capitalize your class name? Did you misspell the name of the method you actually want? (`AnotherClass.new`)
 
-`NoMethod`: You're trying to call a method that isn't available or doesn't exist for the given variable. Usually this is because you think your variable is a string or an integer or an array...but it's actually `nil`. Nil has very few methods available to it, compared to most other ruby data types.
+`NoMethod`: You're trying to call a method that isn't available or doesn't exist for the given variable. Usually this is because you think your variable is a string or an integer or an array...but it's actually `nil`. Nil has very few methods available to it, compared to most other ruby data types. (`kittens.non_existent_method`)
 
-`LoadError`: You're trying to call a file from the wrong place. Or it doesn't exist yet. Or it's in a different folder than you think it is. Or you misspelled its name.
+`LoadError`: You're trying to call a file from the wrong place. Or it doesn't exist yet. Or it's in a different folder than you think it is. Or you misspelled its name. (`require_relative' 'bloop'`)
 
-`ArgumentError`: You're trying to give a method too many arguments...or too few. Check out the numbers to help clear things up: `(0 for 1)` means one argument is required and you aren't passing it. `(2 for 1)` means you're passing two and it only takes one!
+`ArgumentError`: You're trying to give a method too many arguments...or too few. Check out the numbers to help clear things up: `(0 for 1)` means one argument is required and you aren't passing it. `(2 for 1)` means you're passing two and it only takes one! (`SomeClass.new("bloop")`)
 
-'TypeError': You're trying to do something with an integer that you can only do with a string. Or any other data type mismatch. i.e.: `[1, 2, 3].first("two")`.
+'TypeError': You're trying to do something with an integer that you can only do with a string. Or any other data type mismatch. i.e.: `[1, 2, 3].first("two")`. (`s.some_method`)
 
 
 ## Sanity check *everything*
