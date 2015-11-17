@@ -152,6 +152,8 @@ Checking your assumptions is ground zero for problems that seem weird, magical, 
 
 ## Beast-mode uses of Pry
 
+!["Pry logo"](/images/pry.png)
+
 Debugging in Ruby is made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/). You may also find extensions to Pry like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug) useful for particularly thorny issues.
 
 Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line before things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your ruby file, whatever, but put it in there. Then re-run your code. Then make sure all the variables you are using are what you expect them to be!
