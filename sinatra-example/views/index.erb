@@ -1,0 +1,19 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cute Animals!!</title>
+
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="/animals.css">
+    </head>
+    <body>
+    <div class="page-container">
+    <h1>Cute Animals. That's It.</h1>
+        <p>This page is solely devoted to squeeing over adorable animals.</p>
+        <ul><% @cute_animals.each do |animal| %>
+                <li><%= animal %></li>
+            <% end %>
+        </ul>
+    </div>
+    </body>
+</html>

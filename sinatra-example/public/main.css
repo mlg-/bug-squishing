@@ -1,0 +1,201 @@
+/* I used a CSS reset at the top
+of this file with attribution - MLG
+
+  http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End CSS reset. The rest of the CSS I wrote by hand */
+
+html {
+  background-color: grey;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+    color: orange;
+}
+
+a {
+  padding: 10px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.page-container {
+  min-height: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.content-center {
+  width: 82%;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 12px;
+  background-color: rgb(255, 102, 0);
+  min-height: 10px;
+  line-height: 0.4em;
+  padding: 2px 2px;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+nav ul.header-links li:first-child,
+nav ul.header-links li:nth-child(2) {
+  border-right: none;
+}
+
+nav ul.header-links li {
+  display: inline-block;
+  float: left;
+  padding: 10px 5px;
+  border-right: 1px solid black;
+  line-height: 0.2em;
+}
+
+nav ul.header-links li:last-child {
+  float: right;
+  border: none;
+}
+
+span.fake-icon {
+  color: white;
+  border: 1px solid white;
+  padding: 2px 5px;
+}
+
+span.hacker-news {
+  font-weight: bold;
+}
+
+.comments-container {
+  background-color: #F4F5EB;
+  min-height:200px;
+  border-bottom: 2px solid #E65C28;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.comments-container ol {
+  padding: 10px 30px;
+}
+
+.comments-container ol li {
+  color: #6F6F6F;
+  padding: 5px 2px;
+  font-size: 12px;
+}
+
+span.caret {
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  margin: 3px 2px 6px;
+  background: url() no-repeat;
+}
+
+span.article-title {
+  color: black;
+  font-size: 14px;
+}
+
+span.url-preview {
+  color: #6F6F6F;
+  font-size: 10px;
+}
+
+span.point-counter {
+  font-size: 10px;
+  padding-left: 15px;
+}
+
+span.point-counter a {
+  padding: 2px;
+}
+
+span.comment-counter {
+  font-size: 10px;
+}
+
+footer {
+  background-color: #F4F5EB;
+  margin-top: 0;
+}
+
+ul.footer-links {
+  padding: 10px 5px;
+}
+
+ul.footer-links li {
+  font-size: 12px;
+  display: inline;
+  list-decoration: none;
+  padding: 1px 8px;
+  margin: 5px 0;
+  line-height: 1.8em;
+  border-right: 1px solid grey;
+}
+
+ul.footer-links li:last-child {
+  border-right: none;
+}
+
+ul.footer-links a {
+  padding: 5px;
+}
+
+footer form {
+  padding: 10px 0;
+}
+
+label[for="search"] {
+  color: #6F6F6F;
+}
