@@ -1,3 +1,6 @@
+require 'pry'
+require 'pry-byebug'
+
 class Greeting
 
   def initialize
@@ -5,8 +8,9 @@ class Greeting
   end
 
   def hello_world
+    binding.pry
     "Hello World"
   end
 end
 
-puts hello_word
+# puts hello_word
