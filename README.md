@@ -154,15 +154,15 @@ Checking your assumptions is ground zero for problems that seem weird, magical, 
 
 !["Pry logo"](/images/pry.png)
 
-Debugging in Ruby is made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/). You may also find extensions to Pry like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug) useful for particularly thorny issues.
+Debugging in Ruby is made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/).
 
-Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line before things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your ruby file, whatever, but put it in there. Then re-run your code. Then make sure all the variables you are using are what you expect them to be!
+Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line *before* things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your `.rb` file, whatever, but put it in there. Then re-run your code. Now go to your terminal and poke around! What the *actual* values of your variables?
 
 *Side Note* : It's really important to understand the Pry is not "training wheels." Professionals use debugging tools like this every day, many times a day, and they validate their assumptions about what is actually occurring at the time their code is run. You should not resist it because you think you *should know* what's happening! You don't, and we don't either, and that's why we both need it.
 
-You can also learn how to take Pry a step further into power user territory. The extensions above will allow you `step` through your code, including the parts where it interacts with the Ruby core library. When you stop execution, simply use `step` at the pry prompt to step through to wherever your method was called from. `Step` can optionally accept an integer as an argument, which will step you multiple times.
+You can also learn how to take Pry a step further into power user territory with extensions like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug). The extensions above will allow you `step` through your code, including the parts where it interacts with the Ruby core library. When you stop execution, simply use `step` at the pry prompt to step through to wherever your method was called from. `Step` can optionally accept an integer as an argument, which will step you multiple times.
 
-Pry itself has a ton of functionality right out of the box. For example, want to know what all the available variables and classes are within your current scope? Call `ls` when paused in `pry`. Just like `ls` lists the files and folders in your current directory in the Terminal, it will tell you the same about your variables.
+Pry itself also has a ton of power-user functionality right out of the box. For example, want to know what all the available variables and classes are within your current scope? Call `ls` when paused in `pry`. Just like `ls` lists the files and folders in your current directory in the Terminal, it will tell you the same about your variables.
 
 Like so:
 
@@ -174,7 +174,6 @@ locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
 ```
 
 If you've moved past a method that is available in your scope, you can view it by using the `show-method` keyword:
-
 
 ```
 pry(#<Greeting>)> show-method hello_world
@@ -190,18 +189,17 @@ def hello_world
 end
 ```
 
+All of this stuff is great, but `binding.pry` is a workhorse that will not let you down and is dead-simple to start leveraging (get! it!). Use it early and often!
+
 Other things to try in Pry (that aren't necessarily *because of* Pry) are calling `.class` and `.methods` on your variables to make sure you understand what you are working with.
 
-Pry has some other crazy-powerful functionality, and I highly recommend [perusing the docs](https://github.com/pry/pry). Who knows, maybe even many months down the road you'll be ready to [contribute](https://github.com/pry/pry/issues) to Pry! ;)
-
-All of this stuff is great, but `binding.pry` is a workhorse that will not let you down and is dead-simple to start leveraging (get! it!). Use it early and often!
+Pry has many more features than make sense to discuss here, and I highly recommend [perusing the docs](https://github.com/pry/pry). Who knows, maybe even many months down the road you'll be ready to [contribute](https://github.com/pry/pry/issues) to Pry! ;)
 
 ## Isolate variables and move slowly
 
 If you've checked all your assumptions and performed multiple sanity checks and even used Pry to no avail, you should start removing code. Slowly! The worst thing you could do is to delete 25 lines and then have things start working again. Which line was actually the problem in that scenario?! Isolate variables and only change ONE thing at a time when trying to figure out where the problem is. If you comment out code, the same logic applies.
 
 Another way to achieve the same result is to comment out a lot of code until things start to work, and then slowly add things back in until you discover what caused the issue in the first place. In any event, you should be able to point to a line that is problematic, and you can *only* do this by approaching the issue in a scientific manner that isolates potential troublemakers.
-
 
 ## Google Fu
 
@@ -222,6 +220,13 @@ I pasted this into Google:
 ```
 
 This turned up some results that suggested Puma might have been installed incorrectly or corrupted along the way. So the solution wound up being to run a more recent version of Ruby, re-install the Puma gem, and move forward.
+
+Taking Google to the next step involves using some of its [search operators](https://support.google.com/websearch/answer/2466433?hl=en) to get exactly what you want. A couple ideas:
+
+- Putting words in quotes means that only their exact matches will turn up. Great for searches with generic terms that aren't relevant unless in a particular order, i.e. `"xcrun: error: invalid active developer path"`
+- Getting irrelevant results? Filter them out with the `-` minus sign. You can use this for keywords or whole sites: `An error occurred while installing nokogiri (1.6.2.1) -site:wikipedia -saw`.
+- Want *just* StackOverflow and Github results? You can do that: `Error installing pry-debugger site:stackoverflow.com, site:github.com`
+
 
 ### Evaluating your results
 
