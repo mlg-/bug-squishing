@@ -207,7 +207,7 @@ Another way to achieve the same result is to comment out a lot of code until thi
 
 ## Google Fu
 
-### What to paste into Google, and some basic search operators
+### What to paste into Google
 
 When pasting an error into Google, avoid pasting too much text. Pick part of the file path where an error is occurring that will be common to search results of the problem on another user's machine where the error is occurring. Avoid timestamps, your user name on your computer, and other information that's irrelevant and could skew the results in a nonsensical direction. For example, when debugging this error in the Terminal:
 
@@ -224,6 +224,16 @@ I pasted this into Google:
 ```
 
 This turned up some results that suggested Puma might have been installed incorrectly or corrupted along the way. So the solution wound up being to run a more recent version of Ruby, re-install the Puma gem, and move forward.
+
+Sometimes you need to add a keyword or two to your error to clarify its context. For example, when trying to `git clone` a repo, I might get the following error:
+
+```
+Permission denied (publickey).
+```
+
+I should Google "Permission denied (publickey) github." The [first result](https://help.github.com/articles/error-permission-denied-publickey/) is relevant and gives me step-by-step instructions for generating an ssh key for GitHub.
+
+### Step Up Your Google Game With Search Operators
 
 Taking Google to the next step involves using some of its [search operators](https://support.google.com/websearch/answer/2466433?hl=en) to get exactly what you want. A couple ideas:
 
