@@ -150,7 +150,7 @@ Some common Ruby errors:
 
 Assume the simplest thing is wrong before you decide you have discovered a massive bug in Ruby/Sinatra/what-have-you. (Occam's Razor, anybody?)
 
-Checking your assumptions is ground zero for problems that seem weird, magical, and/or completely nonsensical. Did you save the same file in multiple places in your text editor? Are you running two tabs in your terminal, or another window altogether that is conflicting with the code you're trying to run now? Did you save the changes to the file you are working on?
+Checking your assumptions is ground zero for problems that seem weird, magical, and/or completely nonsensical. Did you save the same file in multiple places in your text editor? Are you running two tabs in your terminal, or another window altogether that is conflicting with the code you're trying to run now? Did you save the changes to the file you are working on? Did you re-start the server?
 
 ## Beast-mode uses of Pry
 
@@ -158,7 +158,7 @@ Checking your assumptions is ground zero for problems that seem weird, magical, 
 
 Debugging in Ruby is made more straightforward thanks to the very beautiful and developer-friendly syntax of the language, coupled with nice tools for inspecting issues during code execution [like Pry](http://pryrepl.org/).
 
-Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line *before* things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your `.rb` file, whatever, but put it in there. Then re-run your code. Now go to your terminal and poke around! What the *actual* values of your variables?
+Pry is your friend. The best piece of advice regarding use `pry` that I have is this: Throw a `binding.pry` on the line *before* things blow up. That line can be before the `expect` statement in the test, it can be on the line before you get an error in your `.rb` file, whatever, but put it in there. Then re-run your code. Now go to your terminal and poke around! What are the *actual* values of your variables?
 
 *Side Note* : It's really important to understand the Pry is not "training wheels." Professionals use debugging tools like this every day, many times a day, and they validate their assumptions about what is actually occurring at the time their code is run. You should not resist it because you think you *should know* what's happening! You don't, and we don't either, and that's why we both need it.
 
