@@ -12,3 +12,17 @@ class SomeClass
     @thing + 4
   end
 end
+
+
+###### Freestanding methods to demonstrate stack level too deep errors
+
+def infinite_loop
+  while true
+    puts "I AM INFINITE! Well, until the system runs out of memory"
+    infinite_loop
+  end
+end
+
+def something
+  @something = something
+end

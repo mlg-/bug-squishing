@@ -145,6 +145,8 @@ Some common Ruby errors:
 
 'TypeError': You're trying to do something with an integer that you can only do with a string. Or any other data type mismatch. i.e.: `[1, 2, 3].first("two")`. (`s.some_method`)
 
+`SystemStackError`: "Stack level too deep!" This almost always happens when you have an unterminated `while` loop, a method that calls itself without conclusion, or other structure that keeps going indefinitely. Your system runs out of space and you get a "[stack overflow](https://en.wikipedia.org/wiki/Stack_overflow)." (`infinite_loop`)
+
 
 ## Sanity check *everything*
 
