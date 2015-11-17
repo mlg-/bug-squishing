@@ -160,9 +160,7 @@ Pry is your friend. The best piece of advice regarding use `pry` that I have is 
 
 *Side Note* : It's really important to understand the Pry is not "training wheels." Professionals use debugging tools like this every day, many times a day, and they validate their assumptions about what is actually occurring at the time their code is run. You should not resist it because you think you *should know* what's happening! You don't, and we don't either, and that's why we both need it.
 
-You can also learn how to take Pry a step further into power user territory with extensions like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug). The extensions above will allow you `step` through your code, including the parts where it interacts with the Ruby core library. When you stop execution, simply use `step` at the pry prompt to step through to wherever your method was called from. `Step` can optionally accept an integer as an argument, which will step you multiple times.
-
-Pry itself also has a ton of power-user functionality right out of the box. For example, want to know what all the available variables and classes are within your current scope? Call `ls` when paused in `pry`. Just like `ls` lists the files and folders in your current directory in the Terminal, it will tell you the same about your variables.
+Pry itself has a ton of power-user functionality right out of the box. For example, want to know what all the available variables and classes are within your current scope? Call `ls` when paused in `pry`. Just like `ls` lists the files and folders in your current directory in the Terminal, it will tell you the same about your variables.
 
 Like so:
 
@@ -190,6 +188,8 @@ end
 ```
 
 All of this stuff is great, but `binding.pry` is a workhorse that will not let you down and is dead-simple to start leveraging (get! it!). Use it early and often!
+
+You can also learn how to take Pry a step further into power user territory with extensions like [Pry Nav](https://github.com/nixme/pry-nav) or [Pry Byebug](https://github.com/deivid-rodriguez/pry-byebug). The extensions above will allow you `step` through your code, including the parts where it interacts with the Ruby core library. When you stop execution, simply use `step` at the pry prompt to step through to wherever your method was called from. `Step` can optionally accept an integer as an argument, which will step you multiple times.
 
 Other things to try in Pry (that aren't necessarily *because of* Pry) are calling `.class` and `.methods` on your variables to make sure you understand what you are working with.
 
