@@ -148,6 +148,8 @@ Some common Ruby errors:
 
 ## Sanity check *everything*
 
+Assume the simplest thing is wrong before you decide you have discovered a massive bug in Ruby/Sinatra/what-have-you. (Occam's Razor, anybody?)
+
 Checking your assumptions is ground zero for problems that seem weird, magical, and/or completely nonsensical. Did you save the same file in multiple places in your text editor? Are you running two tabs in your terminal, or another window altogether that is conflicting with the code you're trying to run now? Did you save the changes to the file you are working on?
 
 ## Beast-mode uses of Pry
@@ -230,7 +232,7 @@ Taking Google to the next step involves using some of its [search operators](htt
 
 ### Evaluating your results
 
-So, let's say you've Googled your issue. There's a zillion results, and the first four are from a blog, StackOverflow, a github thread, and another StackOverflow result. Here are some things to consider:
+So, let's say you've Googled your issue. There's a zillion results, and the first four are from a blog, StackOverflow, a GitHub thread, and another StackOverflow result. Here are some things to consider:
 
 - StackOverflow is a good resource, but be sure to evaluate the results carefully. Note the date that a given page was published in the Google search results (you can even sort them so that you only see results from the past year), and bias towards more recent questions.
 - A Github thread may have information about the bug you're encountering when it was emergent. Use `Command + F` to find the relevant portion of the page and skim through the chatter. How did others resolve this issue? Was there a newer version of a tool released that would resolve it?
