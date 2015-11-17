@@ -160,7 +160,39 @@ Pry is your friend. The best piece of advice regarding use `pry` that I have is 
 
 You can also learn how to take Pry a step further into power user territory. The extensions above will allow you `step` through your code, including the parts where it interacts with the Ruby core library. When you stop execution, simply use `step` at the pry prompt to step through to wherever your method was called from. `Step` can optionally accept an integer as an argument, which will step you multiple times.
 
-Other things to try in Pry are calling `.class` and `.methods` on your variables to make sure you understand what you are working with.
+Pry itself has a ton of functionality right out of the box. For example, want to know what all the available variables and classes are within your current scope? Call `ls` when paused in `pry`. Just like `ls` lists the files and folders in your current directory in the Terminal, it will tell you the same about your variables.
+
+Like so:
+
+```
+pry(#<Greeting>)> ls
+Greeting#methods: hello_world
+instance variables: @user
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
+```
+
+If you've moved past a method that is available in your scope, you can view it by using the `show-method` keyword:
+
+
+```
+pry(#<Greeting>)> show-method hello_world
+
+From: /Users/mlg/cf/bug-squishing/hello-world/lib/greeting.rb @ line 10:
+Owner: Greeting
+Visibility: public
+Number of lines: 4
+
+def hello_world
+  binding.pry
+  "Hello World"
+end
+```
+
+Other things to try in Pry (that aren't necessarily *because of* Pry) are calling `.class` and `.methods` on your variables to make sure you understand what you are working with.
+
+Pry has some other crazy-powerful functionality, and I highly recommend [perusing the docs](https://github.com/pry/pry). Who knows, maybe even many months down the road you'll be ready to [contribute](https://github.com/pry/pry/issues) to Pry! ;)
+
+All of this stuff is great, but `binding.pry` is a workhorse that will not let you down and is dead-simple to start leveraging (get! it!). Use it early and often!
 
 ## Isolate variables and move slowly
 
