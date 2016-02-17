@@ -1,6 +1,8 @@
 # Bug Squishing
 **Some thoughts on problem decomposition and debugging.**
 
+[Companion Slides](https://www.emaze.com/@AITQWIIW/debugging)
+
 ## Introduction
 Problem decomposition and debugging are skills that every developer needs to progress from beginner to competent professional. When coupled with the ability to read and implement documentation, these skills form the foundational abilities that separate a developer from a layperson, and they are often are just an extension and refinement of what people consider to be "magical" about "people who are good with computers."
 
