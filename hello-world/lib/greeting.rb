@@ -8,9 +8,9 @@ class Greeting
   end
 
   def hello_world
-    # binding.pry
+    binding.pry
     "Hello World"
   end
 end
 
-# puts hello_word
+puts hello_world

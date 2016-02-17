@@ -2,7 +2,7 @@
 **Some thoughts on problem decomposition and debugging.**
 
 ## Introduction
-Problem decomposition and debugging are skills that every developer needs to progress from beginner to competent professional. When coupled with the ability to read and implement documentation, they form the cornerstone of skills that separate a developer from a layperson, and they are often are just an extension and refinement of what people consider to be "magical" about "people who are good with computers."
+Problem decomposition and debugging are skills that every developer needs to progress from beginner to competent professional. When coupled with the ability to read and implement documentation, these skills form the foundational abilities that separate a developer from a layperson, and they are often are just an extension and refinement of what people consider to be "magical" about "people who are good with computers."
 
 # First: Strategies for Problem Decomposition
 
@@ -248,7 +248,7 @@ So, let's say you've Googled your issue. There's a zillion results, and the firs
 
 - StackOverflow is a good resource, but be sure to evaluate the results carefully. Note the date that a given page was published in the Google search results (you can even sort them so that you only see results from the past year), and bias towards more recent questions.
 - A Github thread may have information about the bug you're encountering when it was emergent. Use `Command + F` to find the relevant portion of the page and skim through the chatter. How did others resolve this issue? Was there a newer version of a tool released that would resolve it?
-- When looking at blogs, you will start to see some familiar suspects come up again and again, and you'll know you have good information there. I am personally fond of from [Thoughtbot](https://robots.thoughtbot.com/) or [Engine Yard](https://blog.engineyard.com/). I know the information in both of those is from smart, professional developers who care about Ruby for a living.
+- When looking at blogs, you will start to see some familiar suspects come up again and again, and you'll know you have good information there. I am personally fond of posts from [Thoughtbot](https://robots.thoughtbot.com/) or [Engine Yard](https://blog.engineyard.com/). I know the information in both of those is from smart, professional developers who care about Ruby for a living.
 
 Always bias towards newer search results, and prefer advice provided by a source you know to be credible. For example, there are some sites that can be okay as a quick-and-dirty resource for HTML/JS/CSS, but for a deeper dive and discussion, bias to checking out the [Mozilla Developer Network docs](https://developer.mozilla.org/en-US/). Sites with dated UIs or tons of ads usually get a pass from me as well, since the traffic driven there may be in the service of advertisements or simply because the information is ancient and has been indexed and clicked on since the Dawn of the Internet.
 
